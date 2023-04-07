@@ -9,13 +9,14 @@ class BooksController < ApplicationController
 
     book.save
 
-    redirect_to'/books/new' #showに持っていきたい
+    redirect_to book_path(book.id)
   end
 
   def index
   end
 
   def show
+    @book = Book.find(params[:id])
   end
 
   def edit
