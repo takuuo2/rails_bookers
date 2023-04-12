@@ -1,12 +1,13 @@
-<h2>Title:</h2>
-<p><%= @book.title %></p>
-
-<h2>Body</h2>
-<p><%= @book.body %></p>
-<br>
-<p>
-  <%= link_to "Edit",edit_book_path(@book.id) %>
-  |
-  <%= link_to "Back","/books/new" %>
-</p>
+<body>
+  <head>
+    <% stylesheet_link_tag "shows", :media => "all" %>
+  </head>
+  <p class = "show"><span>Title:</span><%= @book.title %></p>
+  <p class = "show"><span>Body:</span><%= @book.body %></p>
+  <p class = "show2">
+    <%= link_to "Edit",edit_book_path(@book.id) %>
+    |
+    <%= link_to "Back","/books" %>
+  </p>
+</body>
 

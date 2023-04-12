@@ -1,19 +1,26 @@
-<head>
+<body>
+  <head>
   <%= stylesheet_link_tag "homes", :media => "all" %>
-</head>
-<div class = "head">
-  <h1>ようこそBookersへ！</h1>
-</div>
+  </head>
+  <div class = "head">
+    <h1>
+      ようこそ
+      <span>Bookers</span>
+      へ！
+    </h1>
+  </div>
 
-<div class = "box">
-  <p>
-  <span>Bookers</span>では、さまざまな書籍に関するあなたの意見や
-  <br>
-  <br>
-  <br>
-  印象を共有し交換することができます
-</p>
-  <br>
-  <%= link_to "start","/books/new" %>
-</div>
+  <div class = "box">
+    <p>
+      <span>Bookers</span>では、さまざまな書籍に関するあなたの意見や
+    </p>
+    <p>
+      印象を共有し交換することができます
+    </p>
+    <p>
+      <a href="/books">start</a>
+    </p>
+  </div>
 
+
+</body>
