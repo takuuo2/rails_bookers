@@ -15,3 +15,25 @@ div {
   margin-left:0;
   font-size:13px;
 }
+
+.error{
+  border:2px solid red;
+  width:450px;
+  height:100px;
+  background-color:#f0f0f0;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.error h2{
+  display:block;
+  color:white;
+  background-color:#c00;
+  font-size:12px;
+  padding: 5px 5px 5px 15px;
+  margin:-2px;
+}
+
+.error-li{
+  margin:30px;
+}

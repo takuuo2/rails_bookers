@@ -2,6 +2,11 @@
   <head>
     <% stylesheet_link_tag "shows", :media => "all" %>
   </head>
+  <div class="flash-notifications">
+  <% flash.each do |key, value| %>
+   <%= content_tag(:div, value, class: key) %>
+  <% end %>
+  </div>
   <p class = "show"><span>Title:</span><%= @book.title %></p>
   <p class = "show"><span>Body:</span><%= @book.body %></p>
   <p class = "show2">
